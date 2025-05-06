@@ -4,8 +4,8 @@ package SubComponents "Library SubComponents"
   extends Modelica.Icons.InternalPackage;
 
   model Cable "Simple cable model"
-    parameter Modelica.SIunits.TranslationalSpringConstant k "Elasticity modulus";
-    parameter Modelica.SIunits.Force RotureStrenght "Break force";
+    parameter Modelica.Units.SI.TranslationalSpringConstant k "Elasticity modulus";
+    parameter Modelica.Units.SI.Force RotureStrenght "Break force";
     Modelica.Mechanics.MultiBody.Interfaces.Frame_a frame_a annotation(
       Placement(visible = true, transformation(origin = {0, 98}, extent = {{-16, -16}, {16, 16}}, rotation = -90), iconTransformation(origin = {0, 98}, extent = {{-16, -16}, {16, 16}}, rotation = -90)));
     Modelica.Mechanics.MultiBody.Interfaces.Frame_b frame_b annotation(
@@ -14,8 +14,8 @@ package SubComponents "Library SubComponents"
       Placement(transformation(origin = {0, 66}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
     Modelica.Mechanics.MultiBody.Forces.WorldForce force_b(animation = true, resolveInFrame = Modelica.Mechanics.MultiBody.Types.ResolveInFrameB.world) annotation(
       Placement(transformation(origin = {0, -58}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
-    Modelica.SIunits.Length Lenght "Actual distance between connectors";
-    Modelica.SIunits.Force Force "Force impossed by cable due to elongation";
+    Modelica.Units.SI.Length Lenght "Actual distance between connectors";
+    Modelica.Units.SI.Force Force "Force impossed by cable due to elongation";
     Real Direction[3] "Force direction";
     Boolean IsBreak(start = false);
     Modelica.Blocks.Interfaces.RealInput SetLenght "Unstretched length" annotation(
@@ -133,15 +133,15 @@ package SubComponents "Library SubComponents"
 
   model Ikeda
     //Input Parameters
-    parameter Modelica.SIunits.Length Lpp = 100 "Length between perpendiculars [m]" annotation(
+    parameter Modelica.Units.SI.Length Lpp = 100 "Length between perpendiculars [m]" annotation(
       Dialog(group = "Ship parameters"));
-    parameter Modelica.SIunits.Length B = 20 "Moulded beam [m]" annotation(
+    parameter Modelica.Units.SI.Length B = 20 "Moulded beam [m]" annotation(
       Dialog(group = "Ship parameters"));
-    parameter Modelica.SIunits.Length Draft = 4 " Mean moulded draft [m]" annotation(
+    parameter Modelica.Units.SI.Length Draft = 4 " Mean moulded draft [m]" annotation(
       Dialog(group = "Hidrostatics Properties"));
     parameter Real Cb = 0.693 "Ship block coefficient [-]" annotation(
       Dialog(group = "Ship parameters"));
-    parameter Modelica.SIunits.Length OG = -0.2 "Distance from waterline to CoG, negative if CoG is below waterline [m]" annotation(
+    parameter Modelica.Units.SI.Length OG = -0.2 "Distance from waterline to CoG, negative if CoG is below waterline [m]" annotation(
       Dialog(group = "Ship parameters"));
     //Input Variables
     Real v;

@@ -329,11 +329,18 @@ within ShipSIM;
       connect(C252.y, sum1.u[142]);
       connect(C253.y, sum1.u[143]);
       connect(C254.y, sum1.u[144]);
-      connect(C255.y, sum1.u[145]);
-      connect(C256.y, sum1.u[146]);
+// use algorithm add for TriggeredConsumers   
+   algorithm
+      sum1.u[145] := C255.y;
+      sum1.u[146] := C256.y;
+      sum1.u[148] := C258.y;
+      sum1.u[149] := C259.y;    
+//      connect(C255.y, sum1.u[145]);
+//      connect(C256.y, sum1.u[146]);
+//      connect(C258.y, sum1.u[148]);
+//      connect(C259.y, sum1.u[149]);
+equation
       connect(C257.y, sum1.u[147]);
-      connect(C258.y, sum1.u[148]);
-      connect(C259.y, sum1.u[149]);
       connect(C260.y, sum1.u[150]);
       connect(C261.y, sum1.u[151]);
       connect(C262.y, sum1.u[152]);

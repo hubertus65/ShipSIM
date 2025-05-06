@@ -1,0 +1,51 @@
+{
+  "name": "Shipsim",
+  "format": "1.0.0",
+  "dependencies": [],
+  "content": [
+    {
+      "relpath": "ShipSIM",
+      "contentType": "MODELICA",
+      "name": "ShipSIM",
+      "defaultDisabled": false,
+      "id": "3bfc53543ecc441aa36c3cf37a1a3a6a"
+    },
+    {
+      "relpath": "Resources/Views",
+      "contentType": "VIEWS",
+      "defaultDisabled": false,
+      "id": "719298327b3c4d00afcdae3594b68c23"
+    },
+    {
+      "relpath": "Resources/Favorites",
+      "contentType": "FAVORITES",
+      "defaultDisabled": false,
+      "id": "ba802a83297f4491ac0e7f917f2a9c6e"
+    },
+    {
+      "relpath": "Resources/CustomFunctions",
+      "contentType": "CUSTOM_FUNCTIONS",
+      "defaultDisabled": false,
+      "id": "74082e683dac453fb2d219b6cd0b661b"
+    },
+    {
+      "relpath": "Resources/Custom",
+      "contentType": "GENERIC",
+      "defaultDisabled": false,
+      "id": "dea95de5f3f74142833538529438491a"
+    },
+    {
+      "relpath": "ReferenceResults",
+      "contentType": "REFERENCE_RESULTS",
+      "defaultDisabled": false,
+      "id": "bb243c8808d44b7daa17cef5b88f01d0"
+    },
+    {
+      "relpath": "Resources/ExperimentDefinitions",
+      "contentType": "EXPERIMENT_DEFINITIONS",
+      "defaultDisabled": false,
+      "id": "5ee0dcd6bdf34dd4a27ff1a0446f9cb9"
+    }
+  ],
+  "executionOptions": []
+}

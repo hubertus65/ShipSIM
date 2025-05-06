@@ -748,6 +748,7 @@ package Examples "Sample simulations of the library"
         Diagram(graphics = {Rectangle(origin = {28, -33}, lineColor = {0, 255, 0}, extent = {{-32, 39}, {32, -39}}), Text(origin = {33, -49}, textColor = {0, 255, 0}, extent = {{-7, 3}, {7, -3}}, textString = "Ship model"), Rectangle(origin = {-48, -39}, lineColor = {255, 0, 0}, extent = {{-40, 31}, {40, -31}}), Text(origin = {33, -49}, textColor = {0, 255, 0}, extent = {{-7, 3}, {7, -3}}, textString = "Ship model"), Text(origin = {-29, -65}, textColor = {255, 0, 0}, extent = {{-11, 3}, {11, -3}}, textString = "Propulsion model"), Rectangle(origin = {-30, 8}, lineColor = {255, 0, 255}, extent = {{-20, 14}, {20, -14}}), Text(origin = {-41, -3}, textColor = {255, 0, 255}, extent = {{-7, 3}, {7, -3}}, textString = "Visualizer"), Rectangle(origin = {92, -33}, lineColor = {170, 85, 0}, extent = {{-29, 39}, {29, -39}}), Text(origin = {80.5, -66}, textColor = {170, 85, 0}, extent = {{-10.5, 3}, {10.5, -3}}, textString = "Anti-Heeling")}, coordinateSystem(extent = {{-125, -75}, {125, 75}}, grid = {1, 1})),
         Icon(coordinateSystem(extent = {{-125, -75}, {125, 75}}, grid = {10, 10})));
     end FourWingSailsAH;
+        annotation(Documentation(info = "<html><p>Sailing examples don't work in MI due to Index reduction issues</p></html>"));
   end Sailing;
 
   package Electrical
@@ -769,6 +770,7 @@ package Examples "Sample simulations of the library"
         experiment(StartTime = 0, StopTime = 50000, Tolerance = 1e-06, Interval = 0.2),
         Documentation(info = "<html><head></head><body>Example of electric load balance simulation.</body></html>", revisions = "<html><head></head><body><span style=\"font-size: 12px;\">Rev. 0.0&nbsp;</span><span style=\"font-size: 12px;\">[BPuente]</span><span style=\"font-size: 12px;\">&nbsp;(01/12/2024): Initial release</span></body></html>"));
     end Consumers;
+        annotation(Documentation(info = "<html><p>Strange algebraicl loop in MI between C255 and C259 that I don't understand! Model not working in spite of improvements.</p></html>"));
   end Electrical;
 
   package Engines

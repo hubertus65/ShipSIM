@@ -3,15 +3,15 @@ within ShipSIM;
     extends Modelica.Icons.InterfacesPackage;
 
     connector ShipDataInput "Ship data connector Input"
-      input Modelica.SIunits.Length Draft;
-      input Modelica.SIunits.Mass Displacement;
-      input Modelica.SIunits.Length CoG[3] "Center of Gravity";
-      input Modelica.SIunits.Angle Angles[3] "Angles [Heel, Trim, Course]";
-      input Modelica.SIunits.Velocity LinearSpeed[3] "Linear Speed [surge, sway, heave]";
-      input Modelica.SIunits.AngularVelocity AngularSpeed[3] "Angular Speed [Roll, Pitch, Yaw]";
+      input Modelica.Units.SI.Length Draft;
+      input Modelica.Units.SI.Mass Displacement;
+      input Modelica.Units.SI.Length CoG[3] "Center of Gravity";
+      input Modelica.Units.SI.Angle Angles[3] "Angles [Heel, Trim, Course]";
+      input Modelica.Units.SI.Velocity LinearSpeed[3] "Linear Speed [surge, sway, heave]";
+      input Modelica.Units.SI.AngularVelocity AngularSpeed[3] "Angular Speed [Roll, Pitch, Yaw]";
       // Absolute speed over ground and position in world axis, measured from CoF
-      input Modelica.SIunits.Velocity WorldSpeedOverGround[3] "Speed Over Ground - World Axis [X speed, Y Speed, Z Speed]";
-      input Modelica.SIunits.Length WorldPosition[3] "Ship Position - World Axis [X, Y, Z]";
+      input Modelica.Units.SI.Velocity WorldSpeedOverGround[3] "Speed Over Ground - World Axis [X speed, Y Speed, Z Speed]";
+      input Modelica.Units.SI.Length WorldPosition[3] "Ship Position - World Axis [X, Y, Z]";
       annotation(
         Documentation(info = "<html><head></head><body><p>
   Data connector (surge, sway, heave, roll, pith, yaw, etc...)</p>
@@ -21,15 +21,15 @@ within ShipSIM;
     end ShipDataInput;
 
     connector ShipDataOutput "Ship data connector Output"
-      output Modelica.SIunits.Length Draft;
-      output Modelica.SIunits.Mass Displacement;
-      output Modelica.SIunits.Length CoG[3] "Center of Gravity";
-      output Modelica.SIunits.Angle Angles[3] "Angles [Heel, Trim, Course]";
-      output Modelica.SIunits.Velocity LinearSpeed[3] "Linear Speed [surge, sway, heave]";
-      output Modelica.SIunits.AngularVelocity AngularSpeed[3] "Angular Speed [Roll, Pitch, Yaw]";
+      output Modelica.Units.SI.Length Draft;
+      output Modelica.Units.SI.Mass Displacement;
+      output Modelica.Units.SI.Length CoG[3] "Center of Gravity";
+      output Modelica.Units.SI.Angle Angles[3] "Angles [Heel, Trim, Course]";
+      output Modelica.Units.SI.Velocity LinearSpeed[3] "Linear Speed [surge, sway, heave]";
+      output Modelica.Units.SI.AngularVelocity AngularSpeed[3] "Angular Speed [Roll, Pitch, Yaw]";
       // Absolute speed over ground and position in world axis, measured from CoF
-      output Modelica.SIunits.Velocity WorldSpeedOverGround[3] "Speed Over Ground - World Axis [X speed, Y Speed, Z Speed]";
-      output Modelica.SIunits.Length WorldPosition[3] "Ship Position - World Axis [X, Y, Z]";
+      output Modelica.Units.SI.Velocity WorldSpeedOverGround[3] "Speed Over Ground - World Axis [X speed, Y Speed, Z Speed]";
+      output Modelica.Units.SI.Length WorldPosition[3] "Ship Position - World Axis [X, Y, Z]";
       annotation(
         Documentation(info = "<html><head></head><body><p>
   Data connector (surge, sway, heave, roll, pith, yaw, etc...)</p>
